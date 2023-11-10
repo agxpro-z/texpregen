@@ -3,9 +3,110 @@
 @tailwind utilities;
 
 :root {
+  --background-color: #E6F5FF;
+  --foreground-color: #1B262C;
+  --primary-accent: #3282B8;
+  --secondary-accent: #0F4C75;
+  --tertiary-accent: #BBE1FA;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-color: #1B262C;
+    --foreground-color: #E6F5FF;
   }
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  min-width: 500px;
+  max-width: 1440px;
+}
+
+.header {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  min-width: 500px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: 1440px;
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.brand {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-navbar > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 4vw;
+  flex-shrink: 0;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper > ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+li i {
+  margin: 4px;
 }
