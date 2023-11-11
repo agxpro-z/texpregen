@@ -1,0 +1,15 @@
+.menu_heading {
+  display: inline-block;
+  margin-bottom: -1rem;
+  margin-right: 10px;
+  max-width: 24rem;
+  min-width: 8rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 8px;
+  width: 95%;
+}
+
+.menu_heading:hover {
+  background-color: var(--secondary-accent);
+}

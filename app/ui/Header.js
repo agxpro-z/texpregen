@@ -30,7 +30,7 @@ export default function Header() {
     <header className="ml-8 mr-8">
       <div className="flex items-center justify-between flex-wrap">
         <div className="tracking-wider">
-          <h1 className={poppins.className}>texpregen</h1>
+          <h1 className={poppins.className}>texpre-gen</h1>
         </div>
         <nav className="flex justify-center items-center text-lg flex-shrink-0">
           <div className={styles.menubar}>

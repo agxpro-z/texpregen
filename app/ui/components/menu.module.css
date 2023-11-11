@@ -1,0 +1,23 @@
+.link {
+  color: var(--foreground-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.menuitem {
+  min-width: 8rem;
+  max-width: 24rem;
+  list-style-type: none;
+  margin-left: -2rem;
+  margin-right: 10px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 8px;
+}
+
+.menuitem:hover {
+  background-color: var(--foreground-dark);
+}
