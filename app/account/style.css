@@ -1,0 +1,60 @@
+.account {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: 2rem; */
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.account > div {
+  padding: 16px;
+}
+
+.account legend {
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.account_button, .account input {
+  height: 2.5rem;
+  width: 18rem;
+  color: var(--foreground-color);
+  font-size: 1rem;
+  background-color: var(--foreground-dark);
+  border: none;
+  border-radius: 10px;
+  margin-top: 16px;
+  padding: 4px 12px;
+  letter-spacing: 0.1em;
+  display: block;
+}
+
+.remember_me {
+  display: block;
+  position: relative;
+  height: 24px;
+  margin-top: 4px
+}
+
+#remember_me {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#remember_me > input {
+  width: 20px;
+  margin-right: 8px;
+}
+
+#remember_me > input:checked {
+  background-color: var(--foreground-dark);
+}
+
+#remember_me > div {
+  margin-top: 12px;
+}
