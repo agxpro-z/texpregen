@@ -1,0 +1,34 @@
+.icon {
+  margin: 4px;
+}
+
+.link {
+  color: var(--foreground-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  transform: scale(3);
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.li {
+  transition: 0.2s ease-in-out 0s;
+}
+
+.li:hover {
+  transform: scale(1.1);
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2.5rem;
+  padding-left: 0px;
+  flex-wrap: wrap;
+}

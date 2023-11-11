@@ -1,0 +1,49 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #E6F5FF;
+  --foreground-color: #1B262C;
+  --primary-accent: #3282B8;
+  --secondary-accent: #83aac5;
+  --tertiary-accent: #BBE1FA;
+  --foreground-dark: #d7ecfa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1B262C;
+    --foreground-color: #E6F5FF;
+    --foreground-dark: rgb(53, 59, 63);
+    --secondary-accent: #0F4C75;
+  }
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  overflow-x: scroll;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: auto;
+  min-width: 200px;
+  max-width: 1440px;
+  scrollbar-width: 4px;
+  scrollbar-color: var(--foreground-color);
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--foreground-color);
+}

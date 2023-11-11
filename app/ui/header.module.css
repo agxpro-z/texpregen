@@ -1,0 +1,13 @@
+.menuicon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menuicon {
+    display: contents;
+  }
+
+  .menubar {
+    display: none;
+  }
+}
