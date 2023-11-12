@@ -33,6 +33,17 @@
   display: block;
 }
 
+.account_button {
+  transition: 0.1s ease-in-out 0s;
+}
+
+.account_button:hover {
+  transform: scale(1.025);
+  color: var(--background-color);
+  background-color: var(--secondary-accent);
+  cursor: pointer;
+}
+
 .remember_me {
   display: block;
   position: relative;
@@ -57,4 +68,10 @@
 
 #remember_me > div {
   margin-top: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .account_button:hover {
+    background-color: var(--tertiary-accent);
+  }
 }
