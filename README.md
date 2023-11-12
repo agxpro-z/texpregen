@@ -18,6 +18,18 @@ Install all dependencies and modules
 
 Run app
 
-```npm run dev```
+```
+export NEXT_PUBLIC_API_URL=<texpregen-api URL>
+npm run dev
+```
+
+or
+
+```NEXT_PUBLIC_API_URL=<texpregen-api URL> npm run dev```
 
 Open http://localhost:3000 in browser to see the app.
+
+## texpregen-api
+texpregen-api must be runnig for texpre-gen app to function.
+
+https://github.com/agxpro-z/texpregen-api
