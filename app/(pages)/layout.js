@@ -6,10 +6,13 @@ export default function Layout({ children }) {
     {
       'name': 'Home',
       'list': [
-        {
-          'name': 'Home',
-          'link': '/',
-        },
+        {'name': 'Home', 'link': '/'},
+      ],
+    },
+    {
+      'name': 'Array',
+      'list': [
+        {'name': 'Sequence', 'link': '/array/sequence', },
       ],
     },
   ];
