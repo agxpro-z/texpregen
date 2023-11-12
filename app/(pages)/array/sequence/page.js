@@ -64,11 +64,11 @@ export default function Array() {
           <input type="number" name="step" id="step" placeholder="0" value={step} onChange={updateStep} />
         </label>
         <label htmlFor="start" className={styles.input}>
-          <span>Opening parenthesis</span>
+          <span>Opening bracket</span>
           <input type="text" name="start" id="start" value={startBracket} onChange={updateStartBracket} />
         </label>
         <label htmlFor="end" className={styles.input}>
-          <span>Closing parenthesis</span>
+          <span>Closing bracket</span>
           <input type="text" name="end" id="end" value={endBracket} onChange={updateEndBracket} />
         </label>
         <label htmlFor="separator" className={styles.input}>
