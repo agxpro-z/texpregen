@@ -1,9 +1,9 @@
-.menuicon {
+.menu-icon {
   display: none;
 }
 
 @media (max-width: 600px) {
-  .menuicon {
+  .menu-icon {
     display: contents;
   }
 

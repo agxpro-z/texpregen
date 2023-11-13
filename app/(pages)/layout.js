@@ -1,5 +1,5 @@
-import MenuList from "../ui/components/MenuList"
-import "./style.css"
+import MenuList from '../ui/components/MenuList'
+import styles from './style.module.css'
 
 export default function Layout({ children }) {
   const list = [
@@ -18,11 +18,11 @@ export default function Layout({ children }) {
   ];
 
   return (
-    <section className="main-section">
-      <aside className="menu-list">
+    <section className={styles['main-section']}>
+      <aside className={styles['menu-list']}>
         <MenuList list={list} />
       </aside>
-      <main className="main-content">
+      <main className={styles['main-content']}>
         {children}
       </main>
     </section>

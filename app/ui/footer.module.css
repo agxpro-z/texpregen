@@ -1,16 +1,16 @@
 .footer {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  position: relative;
-  min-width: 200px;
   margin-left: 2rem;
   margin-right: 2rem;
+  min-width: 200px;
+  position: relative;
 }
 
-.footer_wrapper {
-  display: flex;
+.footer-wrapper {
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }

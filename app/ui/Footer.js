@@ -1,4 +1,4 @@
-import NavList from "./components/NavList"
+import NavList from './components/NavList'
 import styles from './footer.module.css'
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer_wrapper}>
+      <div className={styles['footer-wrapper']}>
         <NavList list={list} />
       </div>
     </footer>

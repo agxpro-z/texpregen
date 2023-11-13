@@ -1,14 +1,13 @@
-import Menu from "./Menu"
-import styles from "./menulist.module.css"
+import Menu from './Menu'
+import styles from './menuList.module.css'
 
 export default function MenuList({ list }) {
   return (
     <div>
       {list.map((item) => {
-        console.log(item)
         return (
           <>
-            <span className={styles.menu_heading}>{item.name}</span>
+            <span className={styles['menu-heading']}>{item.name}</span>
             <Menu list={item.list} />
           </>
         )

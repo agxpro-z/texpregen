@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import Link from "next/link"
-import { useState } from "react"
+import { useState } from 'react'
+import Link from 'next/link'
+import styles from './navListItem.module.css'
 import 'remixicon/fonts/remixicon.css'
-import styles from "./navListItem.module.css"
 
 export default function NavListItem({ item }) {
   const [isHovering, setIsHovering] = useState(false);
@@ -11,8 +11,13 @@ export default function NavListItem({ item }) {
   const onMouseLeave = () => { setIsHovering(false) }
 
   return (
-    <li key="" className={`${styles.li} footer_line`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      <Link href={item.link} className={styles.link}>
+    <li
+      className={`${styles.li} footer_line`}
+      key=""
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <Link className={styles.link} href={item.link}>
         {isHovering ? <i className={`${item.icon2} ${styles.icon}`}></i> : <i className={`${item.icon} ${styles.icon}`}></i>}
         <span className={styles.name}>{item.name}</span>
       </Link>

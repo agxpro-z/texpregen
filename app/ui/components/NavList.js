@@ -1,5 +1,5 @@
-import styles from "@/app/ui/components/navList.module.css"
-import NavListItem from "./NavListItem"
+import NavListItem from './NavListItem'
+import styles from '@/app/ui/components/navList.module.css'
 
 export default function NavList({ list }) {
   return (

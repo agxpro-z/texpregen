@@ -2,6 +2,14 @@
   margin: 4px;
 }
 
+.li {
+  transition: 0.2s ease-in-out 0s;
+}
+
+.li:hover {
+  transform: scale(1.05);
+}
+
 .link {
   color: var(--foreground-color);
   text-decoration: none;
@@ -9,12 +17,4 @@
 
 .name:hover {
   text-decoration: underline;
-}
-
-.li {
-  transition: 0.2s ease-in-out 0s;
-}
-
-.li:hover {
-  transform: scale(1.05);
 }

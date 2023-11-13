@@ -1,8 +1,7 @@
-import Header from "../ui/Header";
-import Footer from "../ui/Footer";
-import "./style.css"
+import Footer from '../ui/Footer';
+import Header from '../ui/Header';
 
-export default function RootLayout({ children }) {
+export default function AccountLayout({ children }) {
   return (
     <>
       {children}

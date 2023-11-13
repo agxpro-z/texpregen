@@ -39,7 +39,7 @@ export default function Header() {
           <div className={styles.menubar}>
             <NavList list={list} />
           </div>
-          <div className={`${styles.menuicon} "m-1 h-6 w-6 items-center"`}>
+          <div className={`${styles['menu-icon']} "m-1 h-6 w-6 items-center"`}>
             <i className="ri-menu-fold-line text-2xl"></i>
           </div>
         </nav>

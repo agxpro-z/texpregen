@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
 import { useState } from "react"
 import axios from "axios"
 import styles from "./style.module.css"
 
-export default function Array() {
+export default function ArraySequence() {
   const [output, setOutput] = useState('')
   const [start, setStart] = useState('')
   const [end, setEnd] = useState('')
@@ -29,56 +29,55 @@ export default function Array() {
     const sep = separator ? separator : ' '
 
     try {
-      const { data } = await axios.get(process.env.NEXT_PUBLIC_API_URL + "/array", {
+      const { data } = await axios.get(process.env.NEXT_PUBLIC_API_URL + '/array', {
         params: {
           's': startValue,
           'e': endValue,
           'i': steps,
         }
       })
-      console.log(data.data)
       setOutput(startBracket + data.data.join(sep) + endBracket)
     } catch (error) {
       if (error instanceof TypeError)
         setOutput('Invalid input.')
       else
-        setOutput('Error.')
+        setOutput('Error: Unable to reach API server.')
     }
   }
 
   return (
     <>
-    <div className={styles.input_window}>
+    <div className={styles['input-window']}>
       <legend className={styles.heading}>Sequence</legend>
-      <form action="" className={styles.inputArea}>
-        <label htmlFor="startRange" className={styles.input}>
-          <span>Starting number</span>
-          <input type="number" name="startRange" id="startRange" placeholder="0" value={start} onChange={updateStart} />
+      <form action="" className={styles['input-container']}>
+        <label htmlFor="startRange" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Starting number</span>
+          <input type="number" name="startRange" id="startRange" placeholder="0" value={start} className={styles.input} onChange={updateStart} />
         </label>
-        <label htmlFor="endRange" className={styles.input}>
-          <span>Ending number</span>
-          <input type="number" name="endRange" id="endRange" placeholder="0" value={end} onChange={updateEnd} />
+        <label htmlFor="endRange" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Ending number</span>
+          <input type="number" name="endRange" id="endRange" placeholder="0" value={end} className={styles.input} onChange={updateEnd} />
         </label>
-        <label htmlFor="step" className={styles.input}>
-          <span>Steps</span>
-          <input type="number" name="step" id="step" placeholder="0" value={step} onChange={updateStep} />
+        <label htmlFor="step" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Steps</span>
+          <input type="number" name="step" id="step" placeholder="0" value={step} className={styles.input} onChange={updateStep} />
         </label>
-        <label htmlFor="start" className={styles.input}>
-          <span>Opening bracket</span>
-          <input type="text" name="start" id="start" value={startBracket} onChange={updateStartBracket} />
+        <label htmlFor="start" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Opening bracket</span>
+          <input type="text" name="start" id="start" value={startBracket} className={styles.input} onChange={updateStartBracket} />
         </label>
-        <label htmlFor="end" className={styles.input}>
-          <span>Closing bracket</span>
-          <input type="text" name="end" id="end" value={endBracket} onChange={updateEndBracket} />
+        <label htmlFor="end" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Closing bracket</span>
+          <input type="text" name="end" id="end" value={endBracket} className={styles.input} onChange={updateEndBracket} />
         </label>
-        <label htmlFor="separator" className={styles.input}>
-          <span>Separator</span>
-          <input type="text" name="separator" id="separator" value={separator} onChange={updateSeparator} />
+        <label htmlFor="separator" className={styles['input-wrapper']}>
+          <span className={styles['input-label']}>Separator</span>
+          <input type="text" name="separator" id="separator" value={separator} className={styles.input} onChange={updateSeparator} />
         </label>
       </form>
-      <button onClick={generateOutput}>Generate</button>
-      <div>
-        <textarea name="output" id="" placeholder="[]" value={output} onChange={updateOutput}></textarea>
+      <button onClick={generateOutput} className={styles.button}>Generate</button>
+      <div className={styles['textarea-wrapper']}>
+        <textarea name="output" id="" placeholder="[]" value={output} className={styles.textarea} onChange={updateOutput}></textarea>
       </div>
     </div>
     </>

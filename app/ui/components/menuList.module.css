@@ -1,4 +1,5 @@
-.menu_heading {
+.menu-heading {
+  border-radius: 8px;
   display: inline-block;
   margin-bottom: -1rem;
   margin-right: 10px;
@@ -6,10 +7,9 @@
   min-width: 8rem;
   padding: 0.5rem;
   padding-left: 1rem;
-  border-radius: 8px;
   width: 95%;
 }
 
-.menu_heading:hover {
+.menu-heading:hover {
   background-color: var(--secondary-accent);
 }

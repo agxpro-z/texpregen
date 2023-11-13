@@ -5,6 +5,8 @@ export const metadata = {
 
 export default function ArraySequenceLayout({ children }) {
   return (
-    <>{children}</>
+    <>
+      {children}
+    </>
   )
 }
