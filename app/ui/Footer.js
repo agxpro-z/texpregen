@@ -11,7 +11,7 @@ export default function Footer() {
     {
       'name': 'Support',
       'link': '/support',
-      'icon': 'ri-money-collar-circle-line',
+      'icon': 'ri-money-dollar-circle-line',
     },
     {
       'name': 'GitHub',
