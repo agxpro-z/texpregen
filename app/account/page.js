@@ -1,6 +1,17 @@
+'use client'
+
+import { useState } from 'react'
 import styles from './style.module.css'
 
 export default function Account() {
+  const [isLoginHovering, setIsLoginHovering] = useState(false)
+  const [isRegisterHovering, setIsRegisterHovering] = useState(false)
+
+  const onLoginMouseEnter = () => { setIsLoginHovering(true) }
+  const onLoginMouseLeave = () => { setIsLoginHovering(false) }
+  const onRegisterMouseEnter = () => { setIsRegisterHovering(true) }
+  const onRegisterMouseLeave = () => { setIsRegisterHovering(false) }
+
   return (
     <>
       <main className={styles.account}>
@@ -12,8 +23,8 @@ export default function Account() {
             <input type="email" name="reg_email2" id="reg_email2" placeholder="verify email" className={styles.input} />
             <input type="password" name="reg_pass" id="reg_pass" placeholder="password" className={styles.input} />
             <input type="password" name="reg_pass2" id="reg_pass2" placeholder="verify password" className={styles.input} />
-            <button className={styles['account-button']}>
-              <i className="ri-user-add-line inline_icon"></i>
+            <button className={styles['account-button']} onMouseEnter={onRegisterMouseEnter} onMouseLeave={onRegisterMouseLeave}>
+              <i className={isRegisterHovering ? "ri-user-add-fill" : "ri-user-add-line"}></i>
               Sign up
             </button>
           </form>
@@ -30,8 +41,8 @@ export default function Account() {
                 <div className={styles['remember-me-heading']}>Remember me</div>
               </label>
             </div>
-            <button className={styles['account-button']}>
-              <i className="ri-login-box-line inline_icon"></i>
+            <button className={styles['account-button']} onMouseEnter={onLoginMouseEnter} onMouseLeave={onLoginMouseLeave}>
+              <i className={isLoginHovering ? "ri-login-box-fill" : "ri-login-box-line"}></i>
               Sign in
             </button>
           </form>
