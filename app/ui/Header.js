@@ -12,16 +12,19 @@ const list = [
     'name': 'Home',
     'link': '/',
     'icon': 'ri-home-gear-line',
+    'icon2': 'ri-home-gear-fill',
   },
   {
     'name': 'About',
     'link': '/about',
     'icon': 'ri-information-line',
+    'icon2': 'ri-information-fill',
   },
   {
     'name': 'Sign-in',
     'link': '/account',
     'icon': 'ri-account-circle-line',
+    'icon2': 'ri-account-circle-fill',
   },
 ]
 

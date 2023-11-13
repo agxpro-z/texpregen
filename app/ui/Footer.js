@@ -7,31 +7,37 @@ export default function Footer() {
       'name': 'Contact',
       'link': '/contact',
       'icon': 'ri-mail-line',
+      'icon2': 'ri-mail-fill',
     },
     {
       'name': 'Support',
       'link': '/support',
       'icon': 'ri-money-dollar-circle-line',
+      'icon2': 'ri-money-dollar-circle-fill',
     },
     {
       'name': 'GitHub',
       'link': 'https://github.com',
       'icon': 'ri-github-line',
+      'icon2': 'ri-github-fill',
     },
     {
       'name': 'Terms',
       'link': '/terms',
       'icon': 'ri-article-line',
+      'icon2': 'ri-article-fill',
     },
     {
       'name': 'Security',
       'link': '/security',
       'icon': 'ri-shield-user-line',
+      'icon2': 'ri-shield-user-fill',
     },
     {
       'name': 'Privacy',
       'link': '/privacy',
       'icon': 'ri-lock-2-line',
+      'icon2': 'ri-lock-2-fill',
     },
   ]
 

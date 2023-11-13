@@ -1,6 +1,5 @@
-import styles from "@/app/ui/components/navlist.module.css"
-import Link from "next/link"
-import 'remixicon/fonts/remixicon.css'
+import styles from "@/app/ui/components/navList.module.css"
+import NavListItem from "./NavListItem"
 
 export default function NavList({ list }) {
   return (
@@ -8,12 +7,7 @@ export default function NavList({ list }) {
       <ul className={styles.ul}>
         {list.map((item) => {
           return (
-            <li key="" className={`${styles.li} footer_line`}>
-              <Link href={item.link} className={styles.link}>
-                <i className={`${item.icon} ${styles.icon}`}></i>
-                <span className={styles.name}>{item.name}</span>
-              </Link>
-            </li>
+            <NavListItem item={item} />
           )
         })}
       </ul>
