@@ -86,5 +86,6 @@
   padding: 0.5rem;
   border: none;
   background-color: var(--foreground-color);
+  color: var(--background-color);
   border-radius: 10px;
 }
