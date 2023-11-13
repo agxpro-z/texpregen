@@ -16,6 +16,7 @@
 
 .menuitem {
   list-style-type: none;
+  margin-bottom: 0.25rem;
 }
 
 .active {
