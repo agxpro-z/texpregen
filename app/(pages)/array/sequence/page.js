@@ -12,6 +12,7 @@ export default function ArraySequence() {
   const [startBracket, setStartBracket] = useState('[')
   const [endBracket, setEndBracket] = useState(']')
   const [separator, setSeparator] = useState(',')
+  const [randomize, setRandomize] = useState(0)
 
   const updateOutput = (e) => { setOutput(e.target.value) }
   const updateStart = (e) => { setStart(e.target.value) }
@@ -20,7 +21,7 @@ export default function ArraySequence() {
   const updateStartBracket = (e) => { setStartBracket(e.target.value) }
   const updateEndBracket = (e) => { setEndBracket(e.target.value) }
   const updateSeparator = (e) => { setSeparator(e.target.value) }
-
+  const updateRandomize = (e) => { setRandomize(e.target.checked ? 1 : 0) }
 
   const generateOutput = async () => {
     const startValue = start ? +start : 0
@@ -34,6 +35,7 @@ export default function ArraySequence() {
           's': startValue,
           'e': endValue,
           'i': steps,
+          'r': randomize,
         }
       })
       setOutput(startBracket + data.data.join(sep) + endBracket)
@@ -73,6 +75,10 @@ export default function ArraySequence() {
         <label htmlFor="separator" className={styles['input-wrapper']}>
           <span className={styles['input-label']}>Separator</span>
           <input type="text" name="separator" id="separator" value={separator} className={styles.input} onChange={updateSeparator} />
+        </label>
+        <label htmlFor="random-sequence"  className={styles['random-sequence-wrapper']}>
+          <input type="checkbox" name="random-sequence" id="random-sequence" className={styles['random-sequence-input']} onChange={updateRandomize} />
+          <span className={styles['random-sequence-label']}>Randomize sequence</span>
         </label>
       </form>
       <button onClick={generateOutput} className={styles.button}>Generate</button>
