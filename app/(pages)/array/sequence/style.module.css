@@ -85,6 +85,14 @@
   width: 100%;
 }
 
+.textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: var(--background-color);
+}
+
 .textarea-wrapper {
   height: 100%;
   width: 100%;
