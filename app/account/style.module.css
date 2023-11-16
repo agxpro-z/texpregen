@@ -45,6 +45,21 @@
   padding: 16px;
 }
 
+.password-container {
+  position: relative;
+}
+
+.password-view {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.password-input {
+  letter-spacing: 0rem;
+  padding-right: 38px;
+}
+
 .remember-me {
   display: block;
   height: 24px;
