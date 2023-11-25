@@ -1,35 +1,46 @@
-# texpre-gen
+# texpregen
 Test Expression Generator (texpregen) is a [Next.js](https://nextjs.org) based web app for generating random test expressions (cases) for data structures and algorithms problems.
 
-## How to run
-Install ```node```.js
+## Getting started
+### Prerequisite
+- Node.js
+- Next.js
 
-Clone the repo.
+### How to run
+- Installing ```node.js```
 
-```git clone https://github.com/agxpro-z/texpregen```
+    To install **node.js** follow **nvm** guide or your machine platform specific guide.
 
-Change dir
+- Cloning the repository
+    ```
+    git clone https://github.com/agxpro-z/texpregen
+    ```
 
-```cd texpregen```
+- Switching to 'texpregen' directory
+    ```
+    cd texpregen
+    ```
 
-Install all dependencies and modules
+- Installing all dependencies and modules
+    ```
+    npm i
+    ```
 
-```npm i```
+- Running web app
+    ```
+    export NEXT_PUBLIC_API_URL=<texpregen-api URL>
+    npm run dev
+    ```
 
-Run app
+    or
 
-```
-export NEXT_PUBLIC_API_URL=<texpregen-api URL>
-npm run dev
-```
+    ```
+    NEXT_PUBLIC_API_URL=<texpregen-api URL> npm run dev
+    ```
 
-or
-
-```NEXT_PUBLIC_API_URL=<texpregen-api URL> npm run dev```
-
-Open http://localhost:3000 in browser to see the app.
+- Open [http://localhost:3000](http://localhost:3000) in browser to see the web app.
 
 ## texpregen-api
-texpregen-api must be runnig for texpre-gen app to function.
+texpregen-api must be running for texpregen app to function.
 
 https://github.com/agxpro-z/texpregen-api
