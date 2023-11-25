@@ -31,7 +31,6 @@
   background-color: var(--secondary-accent);
   color: var(--background-color);
   cursor: pointer;
-  transform: scale(1.025);
 }
 
 .legend {
